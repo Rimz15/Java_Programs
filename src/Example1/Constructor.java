@@ -17,13 +17,8 @@ class box{
 
 
 
-public class Constructor {
-	public static void main(String args[]) {
-		box ob = new box();
-		double vol = ob.volume();
-		System.out.println(vol);
-	}
-}
+ 
+
 		
 		
 	

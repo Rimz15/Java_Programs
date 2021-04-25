@@ -4,7 +4,7 @@ public class PrimeNumber {
 
 	public static void main(String[] args) {
 		int remainder;
-		int n=17;
+		int n=18;
 		boolean isprime=true;;
 		for(int i=2;i<=n/2;i++){
 			remainder= n%i;

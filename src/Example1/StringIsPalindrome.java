@@ -2,23 +2,28 @@ package Example1;
 
 public class StringIsPalindrome {
 	
-	public static boolean isPalindrome(String str){
-		if(str==null)
+	static boolean isPalindrome(String str){
+		int i=0,j=str.length()-1;
+		while(i<j){
+		if(str.charAt(i)!=str.charAt(j))
 			return false;
-		int length = str.length();
-        System.out.println(length/2);
-			for(int i=0;i<=length/2;i++){
-				if(str.charAt(i)!=str.charAt(length-i-1));
-				return false;
-			}
-		
+			i++;
+			j--;
+			
+		}
 		return true;
+		
 	}
 	
-
-	public static void main(String[] args) {
-		isPalindrome("bcf");
-     
-	}
-
-}
+	public static void main(String[] args){
+		String str="aba";
+	    if( isPalindrome(str))
+			
+			System.out.println("Yes");
+	
+		
+		else
+			System.out.println("No");
+		
+	
+}}
